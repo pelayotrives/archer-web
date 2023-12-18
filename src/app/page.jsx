@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import Head from 'next/head'
-import Button from "../../components/tailwind/button";
 
 export default function Home() {
 
@@ -16,38 +15,37 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <main className="flex h-screen justify-center items-center bg-primary_bg">
-        {/* <section>
-          <Button>Hola</Button>
-        </section> */}
         <section className="flex flex-col w-full max-w-[600px] gap-4 m-auto px-5">
           <div className="relative w-full max-w-[300px] m-auto">
             <Image
               tabIndex="0"
+              role="img"
               width={300}
               height={40}
               quality={80}
               priority={true}
               src={"/home/logo.png"}
-              alt="Archer Arquitectura primary logo"
+              alt="Logo principal de Archer Arquitectura"
             />
           </div>
           <div className="relative w-full max-w-[600px] m-auto">
             <Image
               tabIndex="0"
+              role="img"
               width={600}
               height={600}
               quality={80}
               priority={true}
               src={"/home/cover.png"}
-              alt="Image of a woman walking down a hallway"
+              alt="Imagen estilo polaroid antigua de una mujer en traje caminado por un pasillo a una distancia considerable"
             />
           </div>
-          <div className="flex flex-row justify-between">
-            <Link tabIndex="0" href={"/about-us"}>
-              Estudio
+          <div className="flex flex-row justify-between font-roboto">
+            <Link legacyBehavior tabIndex="0" href={"/about-us"}>
+              <a aria-label="Acerca de nuestro estudio" className="primary_link">Estudio</a>
             </Link>
-            <Link tabIndex="0" href={"/projects"}>
-              Proyectos
+            <Link legacyBehavior tabIndex="0" href={"/projects"}>
+              <a aria-label="Ver proyectos de Archer Arquitectura" className="primary_link">Proyectos</a>
             </Link>
           </div>
         </section>
