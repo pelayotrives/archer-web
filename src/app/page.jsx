@@ -15,7 +15,7 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <main className="flex h-screen justify-center items-center bg-primary_bg">
-        <section className="flex flex-col w-full max-w-[600px] gap-4 m-auto px-5">
+        <section className="flex flex-col w-full max-w-[600px] gap-sp4 m-auto px-sp5">
           <div className="relative w-full max-w-[300px] m-auto">
             <Image
               tabIndex="0"
