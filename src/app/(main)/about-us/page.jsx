@@ -13,7 +13,7 @@ export default function AboutUs() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <main className="bg-primary_bg">
-        <section className="mx-sp8 min-h-screen h-full">
+        <section className="mx-sp8 min-h-[calc(100vh-80px)] h-full">
             <p>Test Estudio</p>
         </section>
       </main>

@@ -34,8 +34,8 @@ module.exports = {
       colors: {
         'primary_bg': '#F9F7F4',
         'primary_font': '#333333',
-        'burger_menu': '#444444',
         'primary_link_hover': '#702963',
+        'burger_menu': '#444444',
       },
       spacing: {
         'sp1': '4px',

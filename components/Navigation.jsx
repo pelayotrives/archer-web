@@ -45,7 +45,7 @@ export default function Navigation() {
             <a className="text-small_paragraph primary_link">Proyectos</a>
           </Link>
           <Link legacyBehavior href={"/about-us"}>
-            <a className="text-small_paragraph primary_link mx-sp4">Estudio</a>
+            <a className="text-small_paragraph primary_link mx-sp6">Estudio</a>
           </Link>
           <Link legacyBehavior href={"/contact"}>
             <a className="text-small_paragraph primary_link">Contacto</a>
