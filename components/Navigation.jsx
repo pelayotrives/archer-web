@@ -24,7 +24,6 @@ export default function Navigation() {
   }, []);
 
   return (
-    <>
     <header className="sticky top-0 w-full">
       <section className="bg-primary_bg flex flex-row items-center justify-between h-[80px] px-sp8">
         <section className="relative max-w-[300px]">
@@ -43,13 +42,13 @@ export default function Navigation() {
         </section>
         <nav className="xs:flex hidden">
           <Link legacyBehavior href={"/projects"}>
-            <a className="text-small_paragraph primary_link">Projects</a>
+            <a className="text-small_paragraph primary_link">Proyectos</a>
           </Link>
           <Link legacyBehavior href={"/about-us"}>
-            <a className="text-small_paragraph primary_link mx-sp4">About Us</a>
+            <a className="text-small_paragraph primary_link mx-sp4">Estudio</a>
           </Link>
-          <Link legacyBehavior href={"/"}>
-            <a className="text-small_paragraph primary_link">Contact</a>
+          <Link legacyBehavior href={"/contact"}>
+            <a className="text-small_paragraph primary_link">Contacto</a>
           </Link>
         </nav>
         <button className="xs:hidden flex flex-col gap-1" onClick={toggleMenu} aria-expanded={isMenuVisible} aria-label="Toggle Menu">
@@ -60,22 +59,21 @@ export default function Navigation() {
       </section>
       <nav className={`flex flex-col w-full ${isMenuVisible ? 'block' : 'hidden'}`}>
         <Link legacyBehavior href={"/projects"}>
-          <a className="text-small_paragraph primary_link bg-primary_bg px-sp8 py-sp6 border-b border-t border-solid">
-            Projects
+          <a className="text-small_paragraph primary_link bg-primary_bg px-sp8 py-sp6 border-b border-t border-solid" onClick={toggleMenu}>
+            Proyectos
           </a>
         </Link>
         <Link legacyBehavior href={"/about-us"}>
-          <a className="text-small_paragraph primary_link bg-primary_bg px-sp8 py-sp6 border-b border-solid">
-            About Us
+          <a className="text-small_paragraph primary_link bg-primary_bg px-sp8 py-sp6 border-b border-solid" onClick={toggleMenu}>
+            Estudio
           </a>
         </Link>
-        <Link legacyBehavior href={"/"}>
-          <a className="text-small_paragraph primary_link bg-primary_bg px-sp8 py-sp6 border-b border-solid">
-            Contact
+        <Link legacyBehavior href={"/contact"}>
+          <a className="text-small_paragraph primary_link bg-primary_bg px-sp8 py-sp6 border-b border-solid" onClick={toggleMenu}>
+            Contacto
           </a>
         </Link>
       </nav>
     </header>
-    </>
   );
 }
