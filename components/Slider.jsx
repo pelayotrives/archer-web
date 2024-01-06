@@ -6,7 +6,7 @@ import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { projects } from "@/assets/exports";
+import { projects } from "utilities/exports";
 
 export default function GenericSlider() {
   const carouselSettings = {

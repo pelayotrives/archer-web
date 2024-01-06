@@ -10,9 +10,19 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'poppins': ['Poppins', 'sans-serif'],
       'roboto': ['Roboto', 'sans-serif'],
-      'manrope': ['Manrope', 'sans-serif'],
+      'futura-light-italic': ['Futura Light Italic BT', 'sans-serif'],
+      'futura-light': ['Futura Light BT', 'sans-serif'],
+      'futura-book-italic': ['Futura Book Italic BT', 'sans-serif'],
+      'futura-book': ['Futura Book BT', 'sans-serif'],
+      'futura': ['Futura', 'sans-serif'],
+      'futura-medium-italic': ['Futura Medium Italic BT', 'sans-serif'],
+      'futura-medium': ['Futura Medium BT', 'sans-serif'],
+      'futura-bold-italic': ['Futura Bold Italic BT', 'sans-serif'],
+      'futura-bold': ['Futura Bold BT', 'sans-serif'],
+      'futura-heavy-italic': ['Futura Heavy Italic BT', 'sans-serif'],
+      'futura-heavy': ['Futura Heavy BT', 'sans-serif'],
+      'futura-extra-black': ['Futura Extra Black BT', 'sans-serif'],
     },
     fontSize: {
       'title': '32px',
