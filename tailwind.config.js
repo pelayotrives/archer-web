@@ -25,11 +25,12 @@ module.exports = {
       'futura-extra-black': ['Futura Extra Black BT', 'sans-serif'],
     },
     fontSize: {
+      'advertise': '140px',
       'title': '32px',
       'subtitle': '24px',
       'big_paragraph': '18px',
       'paragraph': '16px',
-      'small_paragraph': '14px',
+      'small_paragraph': '14px'
     },
     screens: {
       'xxs': '425px',
@@ -45,6 +46,8 @@ module.exports = {
         'primary_bg': '#F9F7F4',
         'primary_font': '#333333',
         'primary_link_hover': '#702963',
+        'primary_btn': '#702963',
+        'primary_btn_hov': '#8C2579',
         'burger_menu': '#444444',
       },
       spacing: {

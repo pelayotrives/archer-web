@@ -1,8 +1,22 @@
-import React from "react";
+"use client"
+
+import React, {useEffect} from "react";
 import Head from "next/head";
 import Image from "next/image";
+import { useRouter } from 'next/navigation'
+import gsap from "gsap";
+import Button from "@/components/tailwind-components/PrimaryButton";
 
 export default function NotFound() {
+  const router = useRouter()
+  useEffect(() => {
+    const myElement = document.querySelector(".gsap-animated-title");
+    gsap.fromTo(myElement, 
+        { y: -50, opacity: 0 },
+        { duration: 2, y: 0, opacity: 1 }
+      );
+  }, []);
+
   return (
     <>
         <Head>
@@ -12,8 +26,12 @@ export default function NotFound() {
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <main className="bg-primary_bg">
-            <section className="mx-sp8 min-h-screen h-full">
-                <p>Not Found</p>
+            <section className="mx-sp8 min-h-screen h-full flex items-center">
+                <section className="flex flex-col gap-6 items-center md:items-start md:ml-sp14 md:pt-sp12 md:pb-sp12 md:pl-sp8 md:border-l md:border-solid md:border-gray-300">
+                    <h1 className="gsap-animated-title font-futura-heavy text-advertise leading-none">404</h1>
+                    <h2 className="font-roboto text-big_paragraph text-center md:text-left">Esta página <strong>no existe</strong> o el link puede <strong>estar roto</strong>. Pero no te preocupes, siempre puedes volver por donde has venido.</h2>
+                    <Button onClick={() => router.push('/')}>Volver a inicio</Button>
+                </section>
             </section>
         </main>
     </>
