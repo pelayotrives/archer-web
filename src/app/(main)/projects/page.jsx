@@ -40,7 +40,7 @@ export default function Projects() {
           )
         })}
         </section>
-        <section className="bg-primary_bg w-1/2 flex flex-col justify-center items-center pb-8">
+        <section className="bg-primary_bg w-1/2 flex flex-col justify-end items-center pb-8">
           <div className="mx-8 flex justify-end w-[72.5%]">
             <img className=" object-cover rounded-lg" src={selectedProject.imageUrl} alt={selectedProject.title} ref={imageRef}/>
           </div>
