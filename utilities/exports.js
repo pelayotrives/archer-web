@@ -1,44 +1,52 @@
 export const projects = [
-    {
-      id: "project-1",
-      title: "Lorem Ipsum 1",
-      description: "Project Description 1",
-      artist: "Project Artist - Architect - Designer 1",
-      imageUrl: "https://placeholder.co/400x500",
-    },
-    {
-      id: "project-2",
-      title: "Lorem Ipsum 2",
-      description: "Project Description 2",
-      artist: "Project Artist - Architect - Designer 2",
-      imageUrl: "https://placeholder.co/400x500",
-    },
-    {
-      id: "project-3",
-      title: "Lorem Ipsum 3",
-      description: "Project Description 3",
-      artist: "Project Artist - Architect - Designer 3",
-      imageUrl: "https://placeholder.co/400x500",
-    },
-    {
-      id: "project-4",
-      title: "Lorem Ipsum 4",
-      description: "Project Description 4",
-      artist: "Project Artist - Architect - Designer 4",
-      imageUrl: "https://placeholder.co/400x500",
-    },
-    {
-      id: "project-5",
-      title: "Lorem Ipsum 5",
-      description: "Project Description 5",
-      artist: "Project Artist - Architect - Designer 5",
-      imageUrl: "https://placeholder.co/400x500",
-    },
-    {
-      id: "project-6",
-      title: "Lorem Ipsum 6",
-      description: "Project Description 6",
-      artist: "Project Artist - Architect - Designer 6",
-      imageUrl: "https://placeholder.co/400x500",
-    },
-  ];
+  {
+    id: "project-1",
+    key: "01",
+    title: "V6",
+    description: [
+      "La remodelación integral de esta residencia situada en El Viso (Madrid), destaca por el uso de acabados artesanales y de materiales naturales.",
+      "El trabajo de yeso pigmentado en las paredes no solo proporciona una textura suave y uniforme, sino que también abraza la estética minimalista al eliminar adornos innecesarios, dejando un lienzo limpio y pulido.",
+      "La elección del mármol travertino como material de revestimiento no solo se basa en su estética, sino también en su durabilidad y consigue encajar perfectamente con la gama cromática del proyecto.",
+      "Las carpinterías a medida, que se extienden desde el suelo hasta el techo, desempeñan un papel clave en la apertura visual de los ambientes. La elección de este diseño aparte de funcional, también crea una continuidad visual que conecta fluidamente los espacios, haciendo que cada habitación parezca más expansiva y luminosa.",
+      "Esta integración coherente no solo contribuye a la estética general, sino que también mejora la funcionalidad de cada espacio. La continuidad en el diseño de carpintería crea una sensación de fluidez y apertura, haciendo que los límites de las habitaciones desaparezcan visualmente."
+    ],
+    surface: "250m²",
+    year: "2023",
+    project: "IBU Studio",
+    construction: "Archer Arquitectura",
+    imageUrl: "/projects/V6-cover.webp",
+  },
+  {
+    id: "project-2",
+    key: "02",
+    title: "Proyecto SRR1",
+    description: [
+      "La creación de este invernadero situado en Segovia, se convierte en un santuario floral donde las Dalias se integran de manera orgánica en el paisaje interior. Enmarcado por un paisaje de campo, el proyecto se erige como un refugio donde la funcionalidad y la estética convergen de manera armoniosa. La visión detrás de esta construcción no solo busca ofrecer un espacio multidisciplinar, sino también celebra la reutilización de materiales y la integración respetuosa con el entorno.",
+      "La cubierta del invernadero, un elemento distintivo, se ha materializado a partir de vigas de madera recuperada, otorgando a la estructura una calidad única y sostenible. La elección de la madera reciclada no solo añade un carácter rústico y auténtico, sino que también se convierte en una narrativa visual que conecta la construcción con la historia de los materiales, creando una experiencia en la que la naturaleza y la historia convergen.",
+      "La estructura principal, hábilmente elaborada con hierro, presenta una palillería fina que actúa como un delicado filtro de luz. Este diseño permite que la luz natural se infiltre en el invernadero de manera rotunda. La estructura de hierro no solo cumple con su función estructural, sino que también actúa como una expresión visual que enlaza el espacio interior con el esplendor natural que lo rodea.",
+      "Esta construcción no solo ofrece un espacio protegido para el cultivo, sino que también encarna una narrativa de sostenibilidad y conexión con la naturaleza.",
+    ],
+    surface: "100m²",
+    year: "2022",
+    project: "Arturo Grinda",
+    construction: "Archer Arquitectura",
+    imageUrl: "/projects/SRR1-cover.webp",
+  },
+  {
+    id: "project-3",
+    key: "03",
+    title: "Proyecto JJ16",
+    description: [
+      "Ubicada en un histórico edificio del Barrio Salamanca (Madrid), este apartamento es un gran ejemplo de fusión entre la arquitectura moderna y la riqueza histórica de su entorno. La renovación integral de este hogar ha sido un proyecto meticuloso que ha abordado cada detalle con atención, desde la construcción hasta el interiorismo.",
+      "La restauración completa de la estructura incluyó la cuidadosa preservación de elementos originales como chimeneas y carpinterías, rescatándolos con maestría y devolviéndoles su esplendor inicial. Este proceso no solo honra la historia de la edificación, sino que también resalta la habilidad en la construcción y la dedicación a la autenticidad arquitectónica.",
+      "Lo distintivo de esta residencia radica en su audacia para apartarse de las líneas rectas convencionales. En lugar de seguir la norma, se abraza la arquitectura de líneas curvas, trazados suaves y sinuosos, creando así un ambiente único y lleno de carácter. Este enfoque refleja una armoniosa coexistencia entre la modernidad y la tradición arquitectónica.",
+      "La paleta de colores intensos desplegada en el diseño interior resalta las carpinterías, marcando cada espacio con vitalidad y distinción. Tonos profundos como el amarillo y el rosa se convierten en pinceladas de expresión, transformando la vivienda en un escenario visualmente muy interesante.",
+      "Esta residencia no es simplemente un hogar; es un testimonio vibrante de cómo la arquitectura puede ser un medio para conectar el pasado con el presente y donde cada detalle, desde la construcción hasta el diseño interior, contribuye a la narrativa arquitectónica de este enclave histórico."
+    ],
+    surface: "170m²",
+    year: "2019",
+    project: "Lucas y Hernández Gil",
+    construction: "Archer Arquitectura",
+    imageUrl: "/projects/JJ16-cover.webp",
+  }
+];

@@ -42,10 +42,10 @@ export default function Home() {
           </div>
           <div className="flex flex-row justify-between font-roboto">
             <Link legacyBehavior tabIndex="0" href={"/about-us"}>
-              <a aria-label="Acerca de nuestro estudio" className="primary_link">Estudio</a>
+              <a aria-label="Acerca de nuestro estudio" className="primary_link">estudio</a>
             </Link>
             <Link legacyBehavior tabIndex="0" href={"/projects"}>
-              <a aria-label="Ver proyectos de Archer Arquitectura" className="primary_link">Proyectos</a>
+              <a aria-label="Ver proyectos de Archer Arquitectura" className="primary_link">proyectos</a>
             </Link>
           </div>
         </section>

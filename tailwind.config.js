@@ -26,6 +26,7 @@ module.exports = {
     },
     fontSize: {
       'advertise': '140px',
+      'big_title': '48px',
       'title': '32px',
       'subtitle': '24px',
       'big_paragraph': '18px',

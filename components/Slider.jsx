@@ -16,27 +16,27 @@ export default function GenericSlider() {
     autoplay: true,
     swipe: true,
     pauseOnHover: true,
-    autoplaySpeed: 4000,
-    speed: 1500,
-    slidesToShow: 4,
+    autoplaySpeed: 6000,
+    speed: 2000,
+    slidesToShow: 2,
     slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToScroll: 1
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 500,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
@@ -46,21 +46,16 @@ export default function GenericSlider() {
   };
   return (
     <Slider {...carouselSettings}>
-      {projects.map((project) => {
+      {projects.slice(0, 2).map((project) => {
         return (
-          <section className="px-sp3 w-fit" key={project.id}>
-            <h3 className="text-big_paragraph font-semibold font-roboto">{project.title}</h3>
+          <section className="pr-sp3 pl-sp3 mt-sp4" key={project.id}>
+            <img src={project.imageUrl} alt={`Carousel Image ${project.key}`} />
+            <div className="flex flex-row justify-between">
+              <h3 className="text-title font-futura-medium">{project.title}</h3>
+              <p className="text-title font-futura-medium">{project.key}</p>
+            </div>
+            <p className="font-roboto font-medium">{project.artist}</p>
             <p className="font-roboto">{project.description}</p>
-            <p className="font-roboto mb-sp4">{project.artist}</p>
-            <Image
-              role="img"
-              width={400}
-              height={500}
-              quality={80}
-              priority={true}
-              src={project.imageUrl}
-              alt={`Carousel Image ${project.id}`}
-            />
           </section>
         );
       })}
