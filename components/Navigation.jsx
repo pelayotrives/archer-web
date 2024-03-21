@@ -25,7 +25,7 @@ export default function Navigation() {
 
   return (
     <header className="sticky top-0 w-full z-10">
-      <section className="bg-primary_bg flex flex-row items-center justify-between h-[80px] px-sp8">
+      <section className="bg-primary_bg flex flex-row items-center justify-between h-[100px] px-sp12">
         <section className="relative max-w-[300px]">
           <Link href={"/"}>
             <Image

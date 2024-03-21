@@ -2,7 +2,6 @@
 
 import React, {useEffect, useRef} from "react";
 import Head from "next/head";
-import Image from "next/image";
 import { useRouter } from 'next/navigation'
 import gsap from "gsap";
 import Button from "@/components/tailwind-components/PrimaryButton";

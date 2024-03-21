@@ -29,20 +29,36 @@ module.exports = {
       'big_title': '48px',
       'title': '32px',
       'subtitle': '24px',
+      'small_title': '21px',
       'big_paragraph': '18px',
       'paragraph': '16px',
       'small_paragraph': '14px'
     },
     screens: {
+      'xxxxs': '320px',
+      'xxxs': '375px',
       'xxs': '425px',
       'xs': '500px',
       'sm': '640px',
       'md': '768px',
       'lg': '1024px',
       'xl': '1280px',
-      'xxl': '1536px',
+      'xxl': '1575px',
+      'xxxl': '1920px',
     },
     extend: {
+      width: {
+        'xxxxs': '320px',
+        'xxxs': '375px',
+        'xxs': '425px',
+        'xs': '500px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        'xxl': '1575px',
+        'xxxl': '1920px'
+      },
       colors: {
         'primary_bg': '#F9F7F4',
         'primary_font': '#333333',

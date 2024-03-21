@@ -2,7 +2,8 @@ export const projects = [
   {
     id: "project-1",
     key: "01",
-    title: "V6",
+    title: "Proyecto V6",
+    gist: "Remodelación minimalista y artesanal con materiales naturales.",
     description: [
       "La remodelación integral de esta residencia situada en El Viso (Madrid), destaca por el uso de acabados artesanales y de materiales naturales.",
       "El trabajo de yeso pigmentado en las paredes no solo proporciona una textura suave y uniforme, sino que también abraza la estética minimalista al eliminar adornos innecesarios, dejando un lienzo limpio y pulido.",
@@ -15,11 +16,15 @@ export const projects = [
     project: "IBU Studio",
     construction: "Archer Arquitectura",
     imageUrl: "/projects/V6-cover.webp",
+    images: [
+      "/projects/V6-cover.webp"
+    ]
   },
   {
     id: "project-2",
     key: "02",
     title: "Proyecto SRR1",
+    gist: "Invernadero sostenible que integra naturaleza y reciclaje.",
     description: [
       "La creación de este invernadero situado en Segovia, se convierte en un santuario floral donde las Dalias se integran de manera orgánica en el paisaje interior. Enmarcado por un paisaje de campo, el proyecto se erige como un refugio donde la funcionalidad y la estética convergen de manera armoniosa. La visión detrás de esta construcción no solo busca ofrecer un espacio multidisciplinar, sino también celebra la reutilización de materiales y la integración respetuosa con el entorno.",
       "La cubierta del invernadero, un elemento distintivo, se ha materializado a partir de vigas de madera recuperada, otorgando a la estructura una calidad única y sostenible. La elección de la madera reciclada no solo añade un carácter rústico y auténtico, sino que también se convierte en una narrativa visual que conecta la construcción con la historia de los materiales, creando una experiencia en la que la naturaleza y la historia convergen.",
@@ -31,11 +36,15 @@ export const projects = [
     project: "Arturo Grinda",
     construction: "Archer Arquitectura",
     imageUrl: "/projects/SRR1-cover.webp",
+    images: [
+      "/projects/SRR1-cover.webp"
+    ]
   },
   {
     id: "project-3",
     key: "03",
     title: "Proyecto JJ16",
+    gist: "Renovación que mezcla modernidad con historia en Madrid.",
     description: [
       "Ubicada en un histórico edificio del Barrio Salamanca (Madrid), este apartamento es un gran ejemplo de fusión entre la arquitectura moderna y la riqueza histórica de su entorno. La renovación integral de este hogar ha sido un proyecto meticuloso que ha abordado cada detalle con atención, desde la construcción hasta el interiorismo.",
       "La restauración completa de la estructura incluyó la cuidadosa preservación de elementos originales como chimeneas y carpinterías, rescatándolos con maestría y devolviéndoles su esplendor inicial. Este proceso no solo honra la historia de la edificación, sino que también resalta la habilidad en la construcción y la dedicación a la autenticidad arquitectónica.",
@@ -48,5 +57,8 @@ export const projects = [
     project: "Lucas y Hernández Gil",
     construction: "Archer Arquitectura",
     imageUrl: "/projects/JJ16-cover.webp",
+    images: [
+      "/projects/JJ16-cover.webp"
+    ]
   }
 ];
