@@ -6,6 +6,15 @@ import { useRouter } from "next/navigation";
 import Head from "next/head";
 import gsap from "gsap";
 
+/**
+ * Resize window function. It includes useState and useEffect to check the window size.
+ *
+ * @function
+ * @returns {Boolean} If window is bigger or smaller than 640px.
+ *
+ * @example
+ * No example available.
+ */
 function useWindowSize() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -14,8 +23,8 @@ function useWindowSize() {
       setIsSmallScreen(window.innerWidth < 640);
     }
 
-    window.addEventListener('resize', checkSize);
     // Initializes the state with the current window size
+    window.addEventListener('resize', checkSize);
     checkSize(); 
 
     return () => window.removeEventListener('resize', checkSize);
@@ -74,7 +83,7 @@ export default function Projects() {
               </div>
               {/* Mobile Image */}
               <div className="sm:hidden flex">
-                <img className="object-cover aspect-[1/1] max-w-[100%] rounded-lg" src={project.imageUrl} alt={project.title}/>
+                <img className="object-cover aspect-[1/1] max-w-[100%] rounded-sm" src={project.imageUrl} alt={project.title}/>
               </div>
             </div>
           ))}

@@ -23,7 +23,7 @@ export default function Home() {
               width={300}
               height={40}
               quality={80}
-              priority={true}
+              priority={false}
               src={"/home/logo.png"}
               alt="Logo principal de Archer Arquitectura"
             />
