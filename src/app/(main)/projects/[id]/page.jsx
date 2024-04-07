@@ -81,35 +81,45 @@ export default function Project() {
       <main className="bg-primary_bg">
         <section className="xxxxs:w-xxxxs xxxs:w-xxxs xxs:w-xxs xs:w-xs sm:w-sm md:w-md lg:w-lg xl:w-xl xxl:w-xxl xxxl:w-xxxl flex md:flex-row flex-col min-h-[calc(100vh-100px)] m-auto px-sp8 gap-sp12">
           {/* Image Section */}
-          <Splide aria-label="Project Carousel" tag="section" options={{
-            rewind: true,
-            autoplay: true,
-            pauseOnHover: false,
-            pagination: false,
-          }}>
-            {
-              selectedProject.images && selectedProject.images.map((image, index) => {
-                return (
-                  <SplideSlide key={index}>
-                  <div className="relative w-full h-[400px] md:h-[calc(100vh-150px)]">
-                    <Image
-                      role="img"
-                      src={image}
-                      fill
-                      style={{ objectFit: "cover" }}
-                      unoptimized={false}
-                      priority={true}
-                      quality={75}
-                      alt={`${selectedProject.title} Image`}
-                    />
-                  </div>
-                </SplideSlide>
-                )
-              })
-            }
-          </Splide>
+          <section className="w-full md:w-1/2 flex flex-col">
+            <Splide aria-label="Project Carousel" tag="section" options={{
+              autoplay: true,
+              direction: "ltr",
+              drag: true,
+              easing: "ease",
+              interval: 5000,
+              keyboard: true,
+              pagination: false,
+              pauseOnHover: true,
+              rewind: true,
+              rewindSpeed: 2000,
+              perPage: 1,
+              perMove: 1,
+            }}>
+              {
+                selectedProject.images && selectedProject.images.map((image, index) => {
+                  return (
+                    <SplideSlide key={index}>
+                    <div className="relative w-full h-[400px] md:h-[calc(100vh-150px)]">
+                      <Image
+                        role="img"
+                        src={image}
+                        fill
+                        style={{ objectFit: "cover" }}
+                        unoptimized={false}
+                        priority={true}
+                        quality={75}
+                        alt={`${selectedProject.title} Image`}
+                      />
+                    </div>
+                  </SplideSlide>
+                  )
+                })
+              }
+            </Splide>
+          </section>
           {/* Projects Title Section */}
-          <section className="w-full flex flex-col justify-start">
+          <section className="w-full md:w-1/2 flex flex-col justify-start">
                 {/* Previous - Next */}
                 <nav className="flex flex-row justify-between pb-sp6">
                   {previousProjectExists ? (
@@ -141,12 +151,12 @@ export default function Project() {
                   <span className="font-medium">{selectedProject.location} | {selectedProject.year}</span>
                 </section>
                 {/* Artist */}
-                <section className="font-roboto text-primary_font text-paragraph flex flex-row gap-sp1 mb-sp1">
+                <section className="font-roboto text-primary_font text-paragraph flex flex-row flex-wrap gap-sp1 mb-sp1">
                   <span className="font-light">Proyecto: </span>
                   <a className="font-medium primary_link underline" href={selectedProject.projectLink} target="_blank">{selectedProject.project}</a>
                 </section>
                 {/* Builder */}
-                <section className="font-roboto text-primary_font flex flex-row gap-sp1 mb-sp3">
+                <section className="font-roboto text-primary_font flex flex-row flex-wrap gap-sp1 mb-sp3">
                   <span className="font-light">Construcción: </span>
                   <p className="font-medium">{selectedProject.construction}</p>
                 </section>

@@ -25,6 +25,13 @@ export const projects = [
       "/projects/V6/V6-3.webp",
       "/projects/V6/V6-4.webp",
       "/projects/V6/V6-5.webp",
+      "/projects/V6/V6-6.webp",
+      "/projects/V6/V6-7.webp",
+      "/projects/V6/V6-8.webp",
+      "/projects/V6/V6-9.webp",
+      "/projects/V6/V6-10.webp",
+      "/projects/V6/V6-11.webp",
+      "/projects/V6/V6-12.webp",
     ]
   },
   {
@@ -51,6 +58,7 @@ export const projects = [
       "/projects/SRR1/SRR1-3.webp",
       "/projects/SRR1/SRR1-4.webp",
       "/projects/SRR1/SRR1-5.webp",
+      "/projects/SRR1/SRR1-6.webp"
     ]
   },
   {
@@ -76,6 +84,9 @@ export const projects = [
       "/projects/JJ16/JJ16-3.webp",
       "/projects/JJ16/JJ16-4.webp",
       "/projects/JJ16/JJ16-5.webp",
+      "/projects/JJ16/JJ16-6.webp",
+      "/projects/JJ16/JJ16-7.webp",
+      "/projects/JJ16/JJ16-8.webp",
     ]
   }
 ];
