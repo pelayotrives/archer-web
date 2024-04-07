@@ -13,7 +13,9 @@ export const projects = [
     ],
     surface: "250m²",
     year: "2023",
+    location: "Madrid",
     project: "IBU Studio",
+    projectLink: "http://ibustudio.com/",
     construction: "Archer Arquitectura",
     imageUrl: "/projects/V6/V6-cover.webp",
     images: [
@@ -23,13 +25,6 @@ export const projects = [
       "/projects/V6/V6-3.webp",
       "/projects/V6/V6-4.webp",
       "/projects/V6/V6-5.webp",
-      "/projects/V6/V6-6.webp",
-      "/projects/V6/V6-7.webp",
-      "/projects/V6/V6-8.webp",
-      "/projects/V6/V6-9.webp",
-      "/projects/V6/V6-10.webp",
-      "/projects/V6/V6-11.webp",
-      "/projects/V6/V6-12.webp",
     ]
   },
   {
@@ -40,12 +35,13 @@ export const projects = [
     description: [
       "La creación de este invernadero situado en Segovia, se convierte en un santuario floral donde las Dalias se integran de manera orgánica en el paisaje interior. Enmarcado por un paisaje de campo, el proyecto se erige como un refugio donde la funcionalidad y la estética convergen de manera armoniosa. La visión detrás de esta construcción no solo busca ofrecer un espacio multidisciplinar, sino también celebra la reutilización de materiales y la integración respetuosa con el entorno.",
       "La cubierta del invernadero, un elemento distintivo, se ha materializado a partir de vigas de madera recuperada, otorgando a la estructura una calidad única y sostenible. La elección de la madera reciclada no solo añade un carácter rústico y auténtico, sino que también se convierte en una narrativa visual que conecta la construcción con la historia de los materiales, creando una experiencia en la que la naturaleza y la historia convergen.",
-      "La estructura principal, hábilmente elaborada con hierro, presenta una palillería fina que actúa como un delicado filtro de luz. Este diseño permite que la luz natural se infiltre en el invernadero de manera rotunda. La estructura de hierro no solo cumple con su función estructural, sino que también actúa como una expresión visual que enlaza el espacio interior con el esplendor natural que lo rodea.",
-      "Esta construcción no solo ofrece un espacio protegido para el cultivo, sino que también encarna una narrativa de sostenibilidad y conexión con la naturaleza.",
+      "La estructura principal, hábilmente elaborada con hierro, presenta una palillería fina que actúa como un delicado filtro de luz. Este diseño permite que la luz natural se infiltre en el invernadero de manera rotunda. La estructura de hierro no solo cumple con su función estructural, sino que también actúa como una expresión visual.",
     ],
     surface: "100m²",
     year: "2022",
+    location: "Segovia",
     project: "Arturo Grinda",
+    projectLink: "https://www.instagram.com/arturogrinda/",
     construction: "Archer Arquitectura",
     imageUrl: "/projects/SRR1/SRR1-cover.webp",
     images: [
@@ -55,7 +51,6 @@ export const projects = [
       "/projects/SRR1/SRR1-3.webp",
       "/projects/SRR1/SRR1-4.webp",
       "/projects/SRR1/SRR1-5.webp",
-      "/projects/SRR1/SRR1-6.webp"
     ]
   },
   {
@@ -66,12 +61,12 @@ export const projects = [
     description: [
       "Ubicada en un histórico edificio del Barrio Salamanca (Madrid), este apartamento es un gran ejemplo de fusión entre la arquitectura moderna y la riqueza histórica de su entorno. La renovación integral de este hogar ha sido un proyecto meticuloso que ha abordado cada detalle con atención, desde la construcción hasta el interiorismo.",
       "La restauración completa de la estructura incluyó la cuidadosa preservación de elementos originales como chimeneas y carpinterías, rescatándolos con maestría y devolviéndoles su esplendor inicial. Este proceso no solo honra la historia de la edificación, sino que también resalta la habilidad en la construcción y la dedicación a la autenticidad arquitectónica.",
-      "Lo distintivo de esta residencia radica en su audacia para apartarse de las líneas rectas convencionales. En lugar de seguir la norma, se abraza la arquitectura de líneas curvas, trazados suaves y sinuosos, creando así un ambiente único y lleno de carácter. Este enfoque refleja una armoniosa coexistencia entre la modernidad y la tradición arquitectónica.",
-      "Esta residencia no es simplemente un hogar; es un testimonio vibrante de cómo la arquitectura puede ser un medio para conectar el pasado con el presente y donde cada detalle, desde la construcción hasta el diseño interior, contribuye a la narrativa arquitectónica de este enclave histórico."
-    ],
+      "Lo distintivo de esta residencia radica en su audacia para apartarse de las líneas rectas convencionales. En lugar de seguir la norma, se abraza la arquitectura de líneas curvas, trazados suaves y sinuosos, creando así un ambiente único y lleno de carácter. Este enfoque refleja una armoniosa coexistencia entre la modernidad y la tradición arquitectónica."    ],
     surface: "170m²",
     year: "2019",
+    location: "Madrid",
     project: "Lucas y Hernández Gil",
+    projectLink: "https://www.linkedin.com/company/lucas-hernandez-gil-architects/about/",
     construction: "Archer Arquitectura",
     imageUrl: "/projects/JJ16/JJ16-cover.webp",
     images: [
@@ -81,9 +76,6 @@ export const projects = [
       "/projects/JJ16/JJ16-3.webp",
       "/projects/JJ16/JJ16-4.webp",
       "/projects/JJ16/JJ16-5.webp",
-      "/projects/JJ16/JJ16-6.webp",
-      "/projects/JJ16/JJ16-7.webp",
-      "/projects/JJ16/JJ16-8.webp",
     ]
   }
 ];
