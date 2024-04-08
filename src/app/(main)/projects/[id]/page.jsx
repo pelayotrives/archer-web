@@ -83,7 +83,14 @@ export default function Project() {
           {/* Image Section */}
           <section className="w-full md:w-1/2 flex flex-col">
             <Splide aria-label="Project Carousel" tag="section" options={{
+              arrows: true,
               autoplay: true,
+              breakpoints: {
+                767: {
+                  arrows: false,
+                  pagination: true
+                },
+              },
               direction: "ltr",
               drag: true,
               easing: "ease",
@@ -93,25 +100,25 @@ export default function Project() {
               pauseOnHover: true,
               rewind: true,
               rewindSpeed: 2000,
-              perPage: 1,
               perMove: 1,
+              perPage: 1,
             }}>
               {
                 selectedProject.images && selectedProject.images.map((image, index) => {
                   return (
                     <SplideSlide key={index}>
-                    <div className="relative w-full h-[400px] md:h-[calc(100vh-150px)]">
-                      <Image
-                        role="img"
-                        src={image}
-                        fill
-                        style={{ objectFit: "cover" }}
-                        unoptimized={false}
-                        priority={true}
-                        quality={75}
-                        alt={`${selectedProject.title} Image`}
-                      />
-                    </div>
+                      <div className="relative w-full h-[400px] md:h-[calc(100vh-150px)]">
+                        <Image
+                          role="img"
+                          src={image}
+                          fill
+                          style={{ objectFit: "cover" }}
+                          unoptimized={false}
+                          priority={true}
+                          quality={75}
+                          alt={`${selectedProject.title} Image`}
+                        />
+                      </div>
                   </SplideSlide>
                   )
                 })
