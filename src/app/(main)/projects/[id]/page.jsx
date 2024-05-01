@@ -25,8 +25,22 @@ export default function Project() {
   * @returns {string} The ID of the calculated project.
   */
   const buildProjectId = (offset) => {
-    const currentIdNumber = parseInt(id.split('-')[1], 10);
+    const parts = id.split('-');
+    if (parts.length < 2 || isNaN(parseInt(parts[1], 10))) {
+      console.error("Invalid project ID format");
+      return null;
+    }
+    const currentIdNumber = parseInt(parts[1], 10);
     const newIdNumber = currentIdNumber + offset;
+  
+    const maxId = projects.length;
+    const minId = 1;
+  
+    if (newIdNumber < minId || newIdNumber > maxId) {
+      console.error("Project ID out of bounds");
+      return null; 
+    }
+  
     return `project-${newIdNumber}`;
   };
 
