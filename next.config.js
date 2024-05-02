@@ -13,11 +13,11 @@ const nextConfig = {
     return [
       {
         source: "/blog",
-        destination: "https://archer-web.vercel.app/",
+        destination: "https://archer-web.vercel.app/blog",
       },
       {
         source: "/blog/:path*",
-        destination: "https://archer-web.vercel.app//:path*",
+        destination: "https://archer-web.vercel.app/blog/:path*",
       },
     ];
   },
