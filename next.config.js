@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -7,6 +8,18 @@ const nextConfig = {
         hostname: "**",
       },
     ],
+  },
+  async rewrites() {
+    return [
+      {
+        source: "/blog",
+        destination: "https://archer-web.vercel.app/",
+      },
+      {
+        source: "/blog/:path*",
+        destination: "https://archer-web.vercel.app//:path*",
+      },
+    ];
   },
 };
 
