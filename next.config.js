@@ -1,6 +1,18 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+  async rewrites() {
+    return [
+      {
+        source: "/blog",
+        destination: "https://archer-web-blog.vercel.app/blog",
+      },
+      {
+        source: "/blog/:path*",
+        destination: "https://archer-web-blog.vercel.app/blog/:path*",
+      },
+    ];
+  },
   images: {
     remotePatterns: [
       {
@@ -8,18 +20,6 @@ const nextConfig = {
         hostname: "**",
       },
     ],
-  },
-  async rewrites() {
-    return [
-      {
-        source: "/blog",
-        destination: "https://archer-web.vercel.app/blog",
-      },
-      {
-        source: "/blog/:path*",
-        destination: "https://archer-web.vercel.app/blog/:path*",
-      },
-    ];
   },
 };
 
