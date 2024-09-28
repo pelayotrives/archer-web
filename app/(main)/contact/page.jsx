@@ -80,7 +80,7 @@ export default function Contact() {
             </div>
             {/* FORM */}
             <form onSubmit={handleSubmit(onSubmit)}>
-              {/* NOMBRE */}
+              {/* NAME */}
               <div>
                 <input
                   autoComplete="this-will-make-the-input-not-to-autocomplete"
@@ -93,7 +93,7 @@ export default function Contact() {
                 />
                 {errors.nombre && <p className="text-red-500">{errors.nombre.message}</p>}
               </div>
-              {/* APELLIDOS */}
+              {/* SURNAME */}
               <div>
                 <input
                   autoComplete="this-will-make-the-input-not-to-autocomplete"
@@ -120,7 +120,7 @@ export default function Contact() {
                 />
                 {errors.email && <p className="text-red-500">{errors.email.message}</p>}
               </div>
-              {/* TELÉFONO */}
+              {/* PHONE */}
               <div>
                 <input
                   autoComplete="this-will-make-the-input-not-to-autocomplete"
@@ -130,7 +130,7 @@ export default function Contact() {
                   {...register("telefono")}
                 />
               </div>
-              {/* MENSAJE */}
+              {/* MESSAGE */}
               <div>
                 <textarea
                   className="w-full border-b-[#C5C5C5] border-t-0 border-r-0 border-l-0 bg-transparent focus:ring-0"
