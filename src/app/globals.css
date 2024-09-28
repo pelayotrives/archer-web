@@ -21,6 +21,7 @@
 
 /* GENERAL */
 p, a, li, label, address, span, strong, button {font-family: "Roboto", sans-serif;}
+input, textarea, select {field-sizing: content;}
 
 /* SPLIDE SLIDE */
 .splide__slide {min-width: 100px;}

@@ -16,18 +16,6 @@ export default function Home() {
       </Head>
       <main className="flex h-screen justify-center items-center bg-primary_bg">
         <section className="flex flex-col w-full max-w-[600px] gap-sp4 m-auto px-sp5">
-          <div className="relative w-full max-w-[300px] m-auto">
-            <Image
-              tabIndex="0"
-              role="img"
-              width={300}
-              height={40}
-              quality={80}
-              priority={false}
-              src={"/home/logo.png"}
-              alt="Logo principal de Archer Arquitectura"
-            />
-          </div>
           <div className="relative w-full max-w-[600px] m-auto">
             <Image
               tabIndex="0"
@@ -36,7 +24,7 @@ export default function Home() {
               height={600}
               quality={80}
               priority={true}
-              src={"/home/cover.png"}
+              src={"/home/cover.webp"}
               alt="Imagen estilo polaroid antigua de una mujer en traje caminado por un pasillo a una distancia considerable"
             />
           </div>
