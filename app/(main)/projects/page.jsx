@@ -62,7 +62,7 @@ export default function Projects() {
         />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <main className="w-full flex flex-row min-h-[calc(100vh-100px)] bg-primary_bg">
+      <main className="w-full flex flex-row min-h-[calc(100vh-100px)] bg-primary-background">
         {/* Projects Title Section */}
         <section className="sm:w-3/6 sm:justify-end sm:mt-0 w-full flex flex-col justify-start gap-3 mt-sp8 pb-sp14">
           {projects.map((project, index) => (
@@ -74,8 +74,8 @@ export default function Projects() {
             >
               {/* Title And Key */}
               <div className="flex flex-row justify-between items-center border-b-2 border-solid border-gray-200 pb-2">
-                <p className="sm:group-hover:translate-x-2 sm:transition-transform sm:duration-300 sm:ease-in-out text-small_title font-futura-book">{project.title}</p>
-                <p className="text-small_title lowercase font-futura-book">{project.key}</p>
+                <p className="sm:group-hover:translate-x-2 sm:transition-transform sm:duration-300 sm:ease-in-out text-small-title font-futura-book">{project.title}</p>
+                <p className="text-small-title lowercase font-futura-book">{project.key}</p>
               </div>
               {/* Gist */}
               <div className={`overflow-hidden transition-all duration-500 ease-out ${selectedProject.id === project.id || isSmallScreen ? 'max-h-80' : 'max-h-0'}`}>

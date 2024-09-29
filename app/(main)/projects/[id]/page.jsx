@@ -92,7 +92,7 @@ export default function Project() {
         <meta name="description" content={`Descubre ${selectedProject.title} y todos los proyectos en los que ha participado a lo largo de su trayectoria Archer Arquitectura, estudio de arquitectura ubicado en Madrid.`}/>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <main className="bg-primary_bg">
+      <main className="bg-primary-background">
         <section className="xxxxs:w-xxxxs xxxs:w-xxxs xxs:w-xxs xs:w-xs sm:w-sm md:w-md lg:w-lg xl:w-xl xxl:w-xxl xxxl:w-xxxl flex md:flex-row flex-col min-h-[calc(100vh-100px)] m-auto px-sp8 gap-sp12">
           {/* Image Section */}
           <section className="w-full md:w-1/2 flex flex-col">
@@ -145,14 +145,14 @@ export default function Project() {
                 <nav className="flex flex-row justify-between pb-sp6">
                   {previousProjectExists ? (
                     <Link legacyBehavior href={`/projects/${buildProjectId(-1)}`}>
-                      <span className="flex flex-row items-center text-paragraph transition-all font-roboto font-regular hover:text-primary_link_hover cursor-pointer gap-sp2"><FaChevronLeft /><a>Anterior</a></span>
+                      <span className="flex flex-row items-center text-paragraph transition-all font-roboto font-regular hover:text-primary-link-hover cursor-pointer gap-sp2"><FaChevronLeft /><a>Anterior</a></span>
                     </Link>
                   ) : (
                     <span className="flex flex-row items-center text-paragraph transition-all font-roboto font-regular text-gray-400 cursor-not-allowed gap-sp2"><FaChevronLeft />Anterior</span>
                   )}
                   {nextProjectExists ? (
                     <Link legacyBehavior href={`/projects/${buildProjectId(1)}`}>
-                      <span className="flex flex-row items-center text-paragraph transition-all font-roboto font-regular hover:text-primary_link_hover cursor-pointer gap-sp2"><a>Siguiente</a><FaChevronRight /></span>
+                      <span className="flex flex-row items-center text-paragraph transition-all font-roboto font-regular hover:text-primary-link-hover cursor-pointer gap-sp2"><a>Siguiente</a><FaChevronRight /></span>
                     </Link>
                   ) : (
                     <span className="flex flex-row items-center text-paragraph transition-all font-roboto font-regular text-gray-400 cursor-not-allowed gap-sp2"><a>Siguiente</a><FaChevronRight /></span>
@@ -160,24 +160,24 @@ export default function Project() {
                 </nav>
                 {/* Title */}
                 <section className="flex flex-row gap-sp4">
-                  <h1 ref={titleRef} role="heading" aria-level={1} className="w-fit font-futura-light text-big_paragraph mb-sp4 bg-black text-white rounded-md px-sp4 py-sp2">{selectedProject.title}</h1>
-                  <p ref={yearRef} className="w-fit font-futura-light text-big_paragraph mb-sp4 border border-black bg-transparent text-black rounded-md px-sp4 py-sp2">{selectedProject.surface}</p>
+                  <h1 ref={titleRef} role="heading" aria-level={1} className="w-fit font-futura-light text-big-paragraph mb-sp4 bg-black text-white rounded-md px-sp4 py-sp2">{selectedProject.title}</h1>
+                  <p ref={yearRef} className="w-fit font-futura-light text-big-paragraph mb-sp4 border border-black bg-transparent text-black rounded-md px-sp4 py-sp2">{selectedProject.surface}</p>
                 </section>
                 {/* Separator */}
                 <section>
                   <hr className="mb-sp5 separator" />
                 </section>
                 {/* Location + Year */}
-                <section className="font-roboto text-primary_font text-big_paragraph flex flex-row gap-sp1 mb-sp3">
+                <section className="font-roboto text-primary-font text-big-paragraph flex flex-row gap-sp1 mb-sp3">
                   <span className="font-medium">{selectedProject.location} | {selectedProject.year}</span>
                 </section>
                 {/* Artist */}
-                <section className="font-roboto text-primary_font text-paragraph flex flex-row flex-wrap gap-sp1 mb-sp1">
+                <section className="font-roboto text-primary-font text-paragraph flex flex-row flex-wrap gap-sp1 mb-sp1">
                   <span className="font-light">Proyecto: </span>
-                  <a className="font-medium primary_link underline" href={selectedProject.projectLink} target="_blank">{selectedProject.project}</a>
+                  <a className="font-medium primary-link underline" href={selectedProject.projectLink} target="_blank">{selectedProject.project}</a>
                 </section>
                 {/* Builder */}
-                <section className="font-roboto text-primary_font flex flex-row flex-wrap gap-sp1 mb-sp3">
+                <section className="font-roboto text-primary-font flex flex-row flex-wrap gap-sp1 mb-sp3">
                   <span className="font-light">Construcción: </span>
                   <p className="font-medium">{selectedProject.construction}</p>
                 </section>

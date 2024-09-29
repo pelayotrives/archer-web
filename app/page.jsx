@@ -14,7 +14,7 @@ export default function Home() {
         <meta name='description' content='Archer Arquitectura - Estudio de arquitectura ubicado en Madrid. Dedicados al diseño, la arquitectura y la construcción desde 1997.' />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <main className="flex h-screen justify-center items-center bg-primary_bg">
+      <main className="flex h-screen justify-center items-center bg-primary-background">
         <section className="flex flex-col w-full max-w-[600px] gap-sp4 m-auto px-sp5">
           <div className="relative w-full max-w-[600px] m-auto">
             <Image
@@ -30,10 +30,10 @@ export default function Home() {
           </div>
           <div className="flex flex-row justify-between font-roboto">
             <Link legacyBehavior tabIndex="0" href={"/about-us"}>
-              <a aria-label="Acerca de nuestro estudio" className="primary_link">estudio</a>
+              <a aria-label="Acerca de nuestro estudio" className="primary-link">estudio</a>
             </Link>
             <Link legacyBehavior tabIndex="0" href={"/projects"}>
-              <a aria-label="Ver proyectos de Archer Arquitectura" className="primary_link">proyectos</a>
+              <a aria-label="Ver proyectos de Archer Arquitectura" className="primary-link">proyectos</a>
             </Link>
           </div>
         </section>

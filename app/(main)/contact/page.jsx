@@ -6,7 +6,6 @@ import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import { useForm } from "react-hook-form";
 import 'react-toastify/dist/ReactToastify.css';
-import Button from "@/components/tailwind-components/PrimaryButton";
 
 export default function Contact() {
   const {
@@ -46,7 +45,7 @@ export default function Contact() {
         />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <main className="bg-primary_bg">
+      <main className="bg-primary-background">
         <ToastContainer />
         <section className="min-h-[calc(100vh-80px)] h-full">
           <section className="mx-sp8 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 pt-8">
@@ -92,7 +91,7 @@ export default function Contact() {
                 <div>
                   <input
                     autoComplete="this-will-make-the-input-not-to-autocomplete"
-                    className="w-full border-b-[#C5C5C5] border-t-0 border-r-0 border-l-0 bg-transparent focus:ring-0 focus:border-b-primary_btn mb-6"
+                    className="input w-full mb-6"
                     type="text"
                     placeholder="Nombre*"
                     {...register("nombre", {
@@ -105,7 +104,7 @@ export default function Contact() {
                 <div>
                   <input
                     autoComplete="this-will-make-the-input-not-to-autocomplete"
-                    className="w-full border-b-[#C5C5C5] border-t-0 border-r-0 border-l-0 bg-transparent focus:ring-0 focus:border-b-primary_btn mb-6"
+                    className="input w-full mb-6"
                     type="text"
                     placeholder="Apellidos"
                     {...register("apellidos")}
@@ -115,7 +114,7 @@ export default function Contact() {
                 <div>
                   <input
                     autoComplete="this-will-make-the-input-not-to-autocomplete"
-                    className="w-full border-b-[#C5C5C5] border-t-0 border-r-0 border-l-0 bg-transparent focus:ring-0 focus:border-b-primary_btn mb-6"
+                    className="input w-full mb-6"
                     type="email"
                     placeholder="Email*"
                     {...register("email", {
@@ -132,7 +131,7 @@ export default function Contact() {
                 <div>
                   <input
                     autoComplete="this-will-make-the-input-not-to-autocomplete"
-                    className="w-full border-b-[#C5C5C5] border-t-0 border-r-0 border-l-0 bg-transparent focus:ring-0 focus:border-b-primary_btn mb-6"
+                    className="input w-full mb-6"
                     type="number"
                     placeholder="Teléfono"
                     {...register("telefono")}
@@ -141,13 +140,13 @@ export default function Contact() {
                 {/* MESSAGE */}
                 <div>
                   <textarea
-                    className="w-full border-b-[#C5C5C5] border-t-0 border-r-0 border-l-0 bg-transparent focus:ring-0 focus:border-b-primary_btn mb-10"
+                    className="input w-full mb-10"
                     placeholder="Mensaje*"
                     {...register("mensaje")}
                   />
                 </div>
                 {/* BUTTON */}
-                <Button className="flex m-auto" type="submit">Enviar</Button>
+                <button className="primary-button flex m-auto" type="submit">Enviar</button>
               </form>
           </section>
         </section>

@@ -25,13 +25,13 @@ module.exports = {
     },
     fontSize: {
       'advertise': '140px',
-      'big_title': '48px',
+      'big-title': '48px',
       'title': '32px',
       'subtitle': '24px',
-      'small_title': '21px',
-      'big_paragraph': '18px',
+      'small-title': '21px',
+      'big-paragraph': '18px',
       'paragraph': '16px',
-      'small_paragraph': '14px'
+      'small-paragraph': '14px'
     },
     screens: {
       'xxxxs': '320px',
@@ -59,12 +59,13 @@ module.exports = {
         'xxxl': '1920px'
       },
       colors: {
-        'primary_bg': '#F9F7F4',
-        'primary_font': '#333333',
-        'primary_link_hover': '#702963',
-        'primary_btn': '#702963',
-        'primary_btn_hov': '#8C2579',
-        'burger_menu': '#444444',
+        'primary-background': '#F9F7F4',
+        'primary-font': '#333333',
+        'primary-link-hover': '#702963',
+        'primary-button': '#702963',
+        'primary-button-hover': '#8C2579',
+        'primary-button-active': '#591D4E',
+        'burger-menu': '#444444',
       },
       spacing: {
         'sp1': '4px',
@@ -97,13 +98,29 @@ module.exports = {
     require('@tailwindcss/container-queries'),
     plugin(function({ addComponents }) {
       addComponents({
-        '.primary_link': {
-          backgroundColor: 'transparent',
-          color: '#333333',
-          '&:hover': {
-            color: '#702963',
-          },
-        }
+        //! Base Components
+        '.row': {display: 'flex', flexDirection: 'row'}, 
+        '.row-centered': {display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}, 
+        '.row-between': {display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}, 
+        '.col': {display: 'flex', flexDirection: 'column'},
+        '.col-centered': {display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}, 
+        '.col-between': {display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center'},
+        //! Inputs
+        '.input': {
+          '@apply border-b-[#C5C5C5] border-t-0 border-r-0 border-l-0 bg-transparent': {},
+          '&:focus': {'@apply ring-0 border-b-primary-button': {},},
+        },
+        //! Buttons
+        '.primary-button': {
+          '@apply bg-primary-button text-white w-fit font-medium py-2 px-6 rounded transition-all text-center cursor-pointer': {},
+          '&:hover': {'@apply bg-primary-button-hover': {},},
+          '&:active': {'@apply bg-primary-button-active': {},},
+          '&:focus': {'@apply outline-1 outline-[#AD2D93]': {},},
+        },
+        '.primary-link': {
+          '@apply no-underline text-[#333333] transition-all cursor-pointer': {},
+          '&:hover': {'@apply text-primary-link-hover': {},},
+        },
       })
     })
   ],

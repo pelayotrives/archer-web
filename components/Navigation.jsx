@@ -25,7 +25,7 @@ export default function Navigation() {
 
   return (
     <header className="sticky top-0 w-full z-10">
-      <section className="bg-primary_bg flex flex-row items-center justify-between h-[100px] px-sp12">
+      <section className="bg-primary-background flex flex-row items-center justify-between h-[100px] px-sp12">
         <section className="relative max-w-[300px]">
           <Link href={"/"}>
             <Image
@@ -42,34 +42,34 @@ export default function Navigation() {
         </section>
         <nav className="xs:flex hidden">
           <Link legacyBehavior href={"/projects"}>
-            <a className="text-small_paragraph lowercase primary_link">Proyectos</a>
+            <a className="text-small-paragraph lowercase primary-link">Proyectos</a>
           </Link>
           <Link legacyBehavior href={"/about-us"}>
-            <a className="text-small_paragraph lowercase primary_link mx-sp6">Estudio</a>
+            <a className="text-small-paragraph lowercase primary-link mx-sp6">Estudio</a>
           </Link>
           <Link legacyBehavior href={"/contact"}>
-            <a className="text-small_paragraph lowercase primary_link">Contacto</a>
+            <a className="text-small-paragraph lowercase primary-link">Contacto</a>
           </Link>
         </nav>
         <button className="xs:hidden flex flex-col gap-1" onClick={toggleMenu} aria-expanded={isMenuVisible} aria-label="Toggle Menu">
-          <div className="w-[20px] h-[2px] rounded-md bg-burger_menu"></div>
-          <div className="w-[20px] h-[2px] rounded-md bg-burger_menu"></div>
-          <div className="w-[20px] h-[2px] rounded-md bg-burger_menu"></div>
+          <div className="w-[20px] h-[2px] rounded-md bg-burger-menu"></div>
+          <div className="w-[20px] h-[2px] rounded-md bg-burger-menu"></div>
+          <div className="w-[20px] h-[2px] rounded-md bg-burger-menu"></div>
         </button>
       </section>
       <nav className={`flex flex-col w-full ${isMenuVisible ? 'block' : 'hidden'}`}>
         <Link legacyBehavior href={"/projects"}>
-          <a className="text-small_paragraph lowercase primary_link bg-primary_bg px-sp8 py-sp6 border-b border-t border-solid" onClick={toggleMenu}>
+          <a className="text-small-paragraph lowercase primary-link bg-primary-background px-sp8 py-sp6 border-b border-t border-solid" onClick={toggleMenu}>
             Proyectos
           </a>
         </Link>
         <Link legacyBehavior href={"/about-us"}>
-          <a className="text-small_paragraph lowercase primary_link bg-primary_bg px-sp8 py-sp6 border-b border-solid" onClick={toggleMenu}>
+          <a className="text-small-paragraph lowercase primary-link bg-primary-background px-sp8 py-sp6 border-b border-solid" onClick={toggleMenu}>
             Estudio
           </a>
         </Link>
         <Link legacyBehavior href={"/contact"}>
-          <a className="text-small_paragraph lowercase primary_link bg-primary_bg px-sp8 py-sp6 border-b border-solid" onClick={toggleMenu}>
+          <a className="text-small-paragraph lowercase primary-link bg-primary-background px-sp8 py-sp6 border-b border-solid" onClick={toggleMenu}>
             Contacto
           </a>
         </Link>
