@@ -55,9 +55,9 @@ export default function Contact() {
             <section className="w-full flex flex-col justify-center">
               {/* ROW INFO 1 */}
               <div>
-                <h4 className="pb-3">Correo electrónico</h4>
-                <p className="pb-4">
-                  <a href="mailto:info@archerarquitectura.com">
+                <h4 className="pb-3 font-roboto">Correo electrónico</h4>
+                <p className="pb-4 font-roboto">
+                  <a className="primary-link" href="mailto:info@archerarquitectura.com">
                     info@archerarquitectura.com
                   </a>
                 </p>
@@ -66,19 +66,19 @@ export default function Contact() {
               </div>
               {/* ROW INFO 2 */}
               <div>
-                <h4 className="pb-3">Teléfonos</h4>
-                <div className="flex flex-wrap gap-2 pb-4">
-                  <a href="tel:+34650436813">+34 650 436 813</a> |{" "}
-                  <a href="tel:+34914855357">+34 914 855 357</a>
+                <h4 className="pb-3 font-roboto">Teléfonos</h4>
+                <div className="flex flex-wrap gap-2 pb-4 font-roboto">
+                  <a className="primary-link" href="tel:+34650436813">+34 650 436 813</a> |{" "}
+                  <a className="primary-link" href="tel:+34914855357">+34 914 855 357</a>
                 </div>
                 <hr />
                 <br />
               </div>
               {/* ROW INFO 3 */}
               <div>
-                <h4 className="pb-3">Dirección</h4>
-                <address className="pb-4 not-italic">
-                  Avenida M-40, nº5 Oficina A102. Polígono Ventorro del Cano, Madrid.
+                <h4 className="pb-3 font-roboto">Dirección</h4>
+                <address className="pb-4 font-roboto not-italic">
+                  <a className="primary-link" href="https://maps.app.goo.gl/LaGsxdi5ameoinZB9" target="_blank" rel="noopener noreferrer">Avenida M-40, nº5 Oficina A102. Polígono Ventorro del Cano, Madrid.</a>
                 </address>
                 <hr />
               </div>
@@ -91,7 +91,7 @@ export default function Contact() {
                 <div>
                   <input
                     autoComplete="this-will-make-the-input-not-to-autocomplete"
-                    className="input w-full mb-6"
+                    className="input w-full font-roboto mb-6"
                     type="text"
                     placeholder="Nombre*"
                     {...register("nombre", {
@@ -104,7 +104,7 @@ export default function Contact() {
                 <div>
                   <input
                     autoComplete="this-will-make-the-input-not-to-autocomplete"
-                    className="input w-full mb-6"
+                    className="input w-full font-roboto mb-6"
                     type="text"
                     placeholder="Apellidos"
                     {...register("apellidos")}
@@ -114,7 +114,7 @@ export default function Contact() {
                 <div>
                   <input
                     autoComplete="this-will-make-the-input-not-to-autocomplete"
-                    className="input w-full mb-6"
+                    className="input w-full font-roboto mb-6"
                     type="email"
                     placeholder="Email*"
                     {...register("email", {
@@ -131,7 +131,7 @@ export default function Contact() {
                 <div>
                   <input
                     autoComplete="this-will-make-the-input-not-to-autocomplete"
-                    className="input w-full mb-6"
+                    className="input w-full font-roboto mb-6"
                     type="number"
                     placeholder="Teléfono"
                     {...register("telefono")}
@@ -140,13 +140,13 @@ export default function Contact() {
                 {/* MESSAGE */}
                 <div>
                   <textarea
-                    className="input w-full mb-10"
+                    className="input w-full font-roboto mb-10"
                     placeholder="Mensaje*"
                     {...register("mensaje")}
                   />
                 </div>
                 {/* BUTTON */}
-                <button className="primary-button flex m-auto" type="submit">Enviar</button>
+                <button className="primary-button flex m-auto font-roboto" type="submit">Enviar</button>
               </form>
           </section>
         </section>

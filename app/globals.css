@@ -20,6 +20,8 @@
 @font-face {font-family: "Futura Extra Black BT"; src: url("/fonts/futura-extra-black-bt.ttf") format("truetype");}
 
 /* GENERAL */
+a {&:focus {outline: none;border-bottom: 1px solid #702963;}}
+img {&:focus {outline: none;}}
 p, a, li, label, address, span, strong, button {font-family: "Roboto", sans-serif;}
 input, textarea, select {field-sizing: content;}
 
