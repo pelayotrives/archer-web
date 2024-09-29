@@ -48,99 +48,107 @@ export default function Contact() {
       </Head>
       <main className="bg-primary_bg">
         <ToastContainer />
-        <section className="mx-sp8 min-h-[calc(100vh-80px)] h-full grid grid-cols-2">
-          <section className="w-full">
-            <img src="http://placehold.co/600x400" alt="" />
+        <section className="min-h-[calc(100vh-80px)] h-full">
+          <section className="mx-sp8 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 pt-8">
+            <section className="w-full flex flex-col justify-center">
+              <img src="http://placehold.co/1000x550" alt="" />
+            </section>
+            <section className="w-full flex flex-col justify-center">
+              {/* ROW INFO 1 */}
+              <div>
+                <h4 className="pb-3">Correo electrónico</h4>
+                <p className="pb-4">
+                  <a href="mailto:info@archerarquitectura.com">
+                    info@archerarquitectura.com
+                  </a>
+                </p>
+                <hr />
+                <br />
+              </div>
+              {/* ROW INFO 2 */}
+              <div>
+                <h4 className="pb-3">Teléfonos</h4>
+                <div className="flex flex-wrap gap-2 pb-4">
+                  <a href="tel:+34650436813">+34 650 436 813</a> |{" "}
+                  <a href="tel:+34914855357">+34 914 855 357</a>
+                </div>
+                <hr />
+                <br />
+              </div>
+              {/* ROW INFO 3 */}
+              <div>
+                <h4 className="pb-3">Dirección</h4>
+                <address className="pb-4 not-italic">
+                  Avenida M-40, nº5 Oficina A102. Polígono Ventorro del Cano, Madrid.
+                </address>
+                <hr />
+              </div>
+            </section>
           </section>
-          <section className="w-full">
-            {/* ROW INFO 1 */}
-            <div>
-              <h4 className="tracking-widest">Correo electrónico</h4>
-              <a className="" href="mailto:info@archerarquitectura.com">
-                info@archerarquitectura.com
-              </a>
-              <hr />
-            </div>
-            {/* ROW INFO 2 */}
-            <div>
-              <h4 className="tracking-widest">Teléfonos</h4>
-              <div className="flex flex-wrap gap-2">
-                <a href="tel:+34650436813">+34 650 436 813</a> |{" "}
-                <a href="tel:+34914855357">+34 914 855 357</a>
-              </div>
-              <hr />
-            </div>
-            {/* ROW INFO 3 */}
-            <div>
-              <h4 className="tracking-widest">Dirección</h4>
-              <address className="">
-                Avenida M-40, nº5 Oficina A102. Polígono Ventorro del Cano, Madrid.
-              </address>
-              <hr />
-            </div>
+          <section className="bg-[#F4F2EF] py-20 mt-20">
             {/* FORM */}
-            <form onSubmit={handleSubmit(onSubmit)}>
-              {/* NAME */}
-              <div>
-                <input
-                  autoComplete="this-will-make-the-input-not-to-autocomplete"
-                  className="w-full border-b-[#C5C5C5] border-t-0 border-r-0 border-l-0 bg-transparent focus:ring-0"
-                  type="text"
-                  placeholder="Tu nombre"
-                  {...register("nombre", {
-                    required: "El nombre es requerido",
-                  })}
-                />
-                {errors.nombre && <p className="text-red-500">{errors.nombre.message}</p>}
-              </div>
-              {/* SURNAME */}
-              <div>
-                <input
-                  autoComplete="this-will-make-the-input-not-to-autocomplete"
-                  className="w-full border-b-[#C5C5C5] border-t-0 border-r-0 border-l-0 bg-transparent focus:ring-0"
-                  type="text"
-                  placeholder="Tus apellidos"
-                  {...register("apellidos")}
-                />
-              </div>
-              {/* EMAIL */}
-              <div>
-                <input
-                  autoComplete="this-will-make-the-input-not-to-autocomplete"
-                  className="w-full border-b-[#C5C5C5] border-t-0 border-r-0 border-l-0 bg-transparent focus:ring-0"
-                  type="email"
-                  placeholder="Tu email"
-                  {...register("email", {
-                    required: "El email es requerido",
-                    pattern: {
-                      value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-                      message: "Formato de email inválido",
-                    },
-                  })}
-                />
-                {errors.email && <p className="text-red-500">{errors.email.message}</p>}
-              </div>
-              {/* PHONE */}
-              <div>
-                <input
-                  autoComplete="this-will-make-the-input-not-to-autocomplete"
-                  className="w-full border-b-[#C5C5C5] border-t-0 border-r-0 border-l-0 bg-transparent focus:ring-0"
-                  type="number"
-                  placeholder="Tu teléfono"
-                  {...register("telefono")}
-                />
-              </div>
-              {/* MESSAGE */}
-              <div>
-                <textarea
-                  className="w-full border-b-[#C5C5C5] border-t-0 border-r-0 border-l-0 bg-transparent focus:ring-0"
-                  placeholder="Tu mensaje"
-                  {...register("mensaje")}
-                />
-              </div>
-              {/* BUTTON */}
-              <Button type="submit">Enviar</Button>
-            </form>
+            <form className="w-11/12 sm:w-6/12 m-auto" onSubmit={handleSubmit(onSubmit)}>
+                {/* NAME */}
+                <div>
+                  <input
+                    autoComplete="this-will-make-the-input-not-to-autocomplete"
+                    className="w-full border-b-[#C5C5C5] border-t-0 border-r-0 border-l-0 bg-transparent focus:ring-0 focus:border-b-primary_btn mb-6"
+                    type="text"
+                    placeholder="Nombre*"
+                    {...register("nombre", {
+                      required: "El nombre es requerido",
+                    })}
+                  />
+                  {errors.nombre && <p className="text-red-500">{errors.nombre.message}</p>}
+                </div>
+                {/* SURNAME */}
+                <div>
+                  <input
+                    autoComplete="this-will-make-the-input-not-to-autocomplete"
+                    className="w-full border-b-[#C5C5C5] border-t-0 border-r-0 border-l-0 bg-transparent focus:ring-0 focus:border-b-primary_btn mb-6"
+                    type="text"
+                    placeholder="Apellidos"
+                    {...register("apellidos")}
+                  />
+                </div>
+                {/* EMAIL */}
+                <div>
+                  <input
+                    autoComplete="this-will-make-the-input-not-to-autocomplete"
+                    className="w-full border-b-[#C5C5C5] border-t-0 border-r-0 border-l-0 bg-transparent focus:ring-0 focus:border-b-primary_btn mb-6"
+                    type="email"
+                    placeholder="Email*"
+                    {...register("email", {
+                      required: "El email es requerido",
+                      pattern: {
+                        value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+                        message: "Formato de email inválido",
+                      },
+                    })}
+                  />
+                  {errors.email && <p className="text-red-500">{errors.email.message}</p>}
+                </div>
+                {/* PHONE */}
+                <div>
+                  <input
+                    autoComplete="this-will-make-the-input-not-to-autocomplete"
+                    className="w-full border-b-[#C5C5C5] border-t-0 border-r-0 border-l-0 bg-transparent focus:ring-0 focus:border-b-primary_btn mb-6"
+                    type="number"
+                    placeholder="Teléfono"
+                    {...register("telefono")}
+                  />
+                </div>
+                {/* MESSAGE */}
+                <div>
+                  <textarea
+                    className="w-full border-b-[#C5C5C5] border-t-0 border-r-0 border-l-0 bg-transparent focus:ring-0 focus:border-b-primary_btn mb-10"
+                    placeholder="Mensaje*"
+                    {...register("mensaje")}
+                  />
+                </div>
+                {/* BUTTON */}
+                <Button className="flex m-auto" type="submit">Enviar</Button>
+              </form>
           </section>
         </section>
       </main>
