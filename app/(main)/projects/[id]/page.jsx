@@ -185,7 +185,7 @@ export default function Project() {
                 <section>
                   {selectedProject.description && selectedProject.description.map((desc, index) => {
                     return (
-                      <p className="mb-sp3 font-roboto text-paragraph font-light" key={index}>{desc}</p>
+                      <p className="mb-sp3 font-roboto text-paragraph font-light text-justify" key={index}>{desc}</p>
                     )
                   })}
                 </section>

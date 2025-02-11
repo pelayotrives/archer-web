@@ -79,7 +79,7 @@ export default function Projects() {
               </div>
               {/* Gist */}
               <div className={`overflow-hidden transition-all duration-500 ease-out ${selectedProject.id === project.id || isSmallScreen ? 'max-h-80' : 'max-h-0'}`}>
-                <p className={`text-paragraph font-futura-book pt-2 pb-sp4 transition-all duration-500 ease-in-out ${selectedProject.id === project.id || isSmallScreen ? 'opacity-100' : 'opacity-0'}`}>{project.gist}</p>
+                <p className={`text-paragraph font-futura-book pt-2 pb-sp4 transition-all duration-500 ease-in-out ${selectedProject.id === project.id || isSmallScreen ? 'opacity-100' : 'opacity-0'}`}>{project.location}. {project.year}</p>
               </div>
               {/* Mobile Image */}
               <div className="sm:hidden flex">
