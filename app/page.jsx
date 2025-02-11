@@ -16,26 +16,28 @@ export default function Home() {
       </Head>
       <main className="flex h-screen justify-center items-center bg-primary-background">
         <section className="flex flex-col w-full max-w-[600px] gap-sp4 m-auto px-sp5">
-          <div className="relative w-full max-w-[600px] m-auto">
-            <Image
-              tabIndex="0"
-              role="img"
-              width={600}
-              height={600}
-              quality={80}
-              priority={true}
-              src={"/home/cover.webp"}
-              alt="Imagen estilo polaroid antigua de una mujer en traje caminado por un pasillo a una distancia considerable"
-            />
-          </div>
-          <div className="flex flex-row justify-between font-roboto">
-            <Link legacyBehavior tabIndex="0" href={"/about-us"}>
+          <Link href={"/projects"}>
+            <div className="relative w-full max-w-[600px] m-auto">
+              <Image
+                tabIndex="0"
+                role="img"
+                width={600}
+                height={600}
+                quality={80}
+                priority={true}
+                src={"/home/cover.webp"}
+                alt="Imagen estilo polaroid antigua de una mujer en traje caminado por un pasillo a una distancia considerable"
+              />
+            </div>
+          </Link>
+          {/* <div className="flex flex-row justify-between font-roboto">
+            <Link className="text-small-paragraph" legacyBehavior tabIndex="0" href={"/about-us"}>
               <a aria-label="Acerca de nuestro estudio" className="primary-link">estudio</a>
             </Link>
-            <Link legacyBehavior tabIndex="0" href={"/projects"}>
+            <Link className="text-small-paragraph" legacyBehavior tabIndex="0" href={"/projects"}>
               <a aria-label="Ver proyectos de Archer Arquitectura" className="primary-link">proyectos</a>
             </Link>
-          </div>
+          </div> */}
         </section>
       </main>
     </>
