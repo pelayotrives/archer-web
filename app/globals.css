@@ -1,29 +1,111 @@
-/* TAILWIND */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@font-face {font-family: "Futura Light Italic BT"; src: url("/fonts/futura.ttf") format("truetype");}
-@font-face {font-family: "Futura Light BT"; src: url("/fonts/futura-light-bt.ttf") format("truetype");}
-@font-face {font-family: "Futura Book Italic BT"; src: url("/fonts/futura-book-italic-bt.ttf") format("truetype");}
-@font-face {font-family: "Futura Book BT"; src: url("/fonts/futura-book-bt.ttf") format("truetype");}
-@font-face {font-family: "Futura"; src: url("/fonts/futura.ttf") format("truetype");}
-@font-face {font-family: "Futura Medium Italic BT"; src: url("/fonts/futura-medium-italic-bt.ttf") format("truetype");}
-@font-face {font-family: "Futura Medium BT"; src: url("/fonts/futura-medium-bt.ttf") format("truetype");}
-@font-face {font-family: "Futura Bold Italic BT"; src: url("/fonts/futura-bold-italic-bt.ttf") format("truetype");}
-@font-face {font-family: "Futura Bold"; src: url("/fonts/futura-bold.ttf") format("truetype");}
-@font-face {font-family: "Futura Heavy Italic BT"; src: url("/fonts/futura-heavy-italic-bt.ttf") format("truetype");}
-@font-face {font-family: "Futura Heavy BT"; src: url("/fonts/futura-heavy-bt.ttf") format("truetype");}
-@font-face {font-family: "Futura Extra Black BT"; src: url("/fonts/futura-extra-black-bt.ttf") format("truetype");}
+
+@font-face {
+    font-family: "Futura Light Italic BT";
+    src: url("/fonts/futura.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Futura Light BT";
+    src: url("/fonts/futura-light-bt.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Futura Book Italic BT";
+    src: url("/fonts/futura-book-italic-bt.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Futura Book BT";
+    src: url("/fonts/futura-book-bt.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Futura";
+    src: url("/fonts/futura.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Futura Medium Italic BT";
+    src: url("/fonts/futura-medium-italic-bt.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Futura Medium BT";
+    src: url("/fonts/futura-medium-bt.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Futura Bold Italic BT";
+    src: url("/fonts/futura-bold-italic-bt.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Futura Bold";
+    src: url("/fonts/futura-bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Futura Heavy Italic BT";
+    src: url("/fonts/futura-heavy-italic-bt.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Futura Heavy BT";
+    src: url("/fonts/futura-heavy-bt.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Futura Extra Black BT";
+    src: url("/fonts/futura-extra-black-bt.ttf") format("truetype");
+}
 
 /* GENERAL */
-a {&:focus {outline: none;border-bottom: 1px solid #702963;}}
-img {&:focus {outline: none;}}
-p, a, li, label, address, span, strong, button {font-family: "Roboto", sans-serif;}
-input, textarea, select {field-sizing: content;}
+/* a {&:focus {outline: none;border-bottom: 1px solid #702963;}} */
+img:focus {
+    outline: none;
+}
+
+p,
+a,
+li,
+label,
+address,
+span,
+strong,
+button {
+    font-family: "Roboto", sans-serif;
+}
+
+input,
+textarea,
+select {
+    field-sizing: content;
+}
 
 /* SPLIDE SLIDE */
-.splide__slide {min-width: 100px;}
+.splide__slide {
+    min-width: 100px;
+}
+
+.splide__pagination {
+    padding: 0 1em !important;
+    position: static !important;
+    margin-top: -30px !important;
+}
+
+.splide.is-initialized.is-overflow.splide--slide.splide--ltr.splide--draggable.is-active {
+    position: static;
+}
+
+@media only screen and (min-width: 768px) {
+    .splide.is-initialized.is-overflow.splide--slide.splide--ltr.splide--draggable.is-active {
+        position: sticky;
+        top: 100px;
+    }
+}

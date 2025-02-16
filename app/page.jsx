@@ -30,14 +30,6 @@ export default function Home() {
               />
             </div>
           </Link>
-          {/* <div className="flex flex-row justify-between font-roboto">
-            <Link className="text-small-paragraph" legacyBehavior tabIndex="0" href={"/about-us"}>
-              <a aria-label="Acerca de nuestro estudio" className="primary-link">estudio</a>
-            </Link>
-            <Link className="text-small-paragraph" legacyBehavior tabIndex="0" href={"/projects"}>
-              <a aria-label="Ver proyectos de Archer Arquitectura" className="primary-link">proyectos</a>
-            </Link>
-          </div> */}
         </section>
       </main>
     </>
